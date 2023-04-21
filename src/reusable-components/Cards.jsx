@@ -166,17 +166,23 @@ export default function Cards() {
                       borderRadius: "20px",
                       padding:'10px',
                       margin:'10px',
+                      textDecoration:'none'
                     }}
                   >
-                    Card Link
+                    Buy Tickets
                   </Card.Link>
                   <Card.Link
                     href="#"
                     style={{
                       color: "white",
+                      border: "1px solid white",
+                      borderRadius: "20px",
+                      padding:'10px',
+                      margin:'10px',
+                      textDecoration:'none'
                     }}
                   >
-                    Another Link
+                    Book tickets
                   </Card.Link>
                 </div>
               </Card.Body>
