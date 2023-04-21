@@ -1,0 +1,38 @@
+.bi-star {
+    font-size: 36px; 
+    color: yellow;
+}
+
+.bi-gem {
+    font-size: 36px; 
+    color: red;
+}
+
+.r-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card-container {
+    display: flex;
+}
+
+.card {
+    margin: 0 10px;
+}
+
+
+  @media screen and (max-width: 600px) {
+    .r-page {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    .reward-card {
+        margin: 5px;
+    }
+}

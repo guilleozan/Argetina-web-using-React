@@ -1,0 +1,54 @@
+.cont-nav{
+    float: right;
+    margin:15px;
+    /* background-color:yellow; */
+
+}
+
+
+.offCanvUl{
+    /* background-color: rgb(218, 223, 227); */
+    display: flex;
+    
+    
+}
+.offCanvUlLi{
+    display: flex;
+    margin: 10px;
+    padding: 20px;
+   
+}
+.offCanvUl li.offCanvUlLi > a {
+    text-decoration: none;
+    color:#C1B9BA;
+
+  }
+  .linea{
+    width:1px;
+    height: 500px;
+    background-color:#C1B9BA;
+    margin: 20px 0px 20px;
+    z-index:1;
+    position: relative;
+
+    
+  }
+
+  .offCanvUlLi :hover{
+    
+    background-color:red;
+    padding: 15px 20px;
+    transition :all 0.7s;
+    border-radius:40px;
+    box-shadow: 1px 1px 2px RED;   
+  
+  }
+  .navbar-menu {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 250px;
+  }
+  .blank{
+    height: 100px;
+  }

@@ -1,0 +1,52 @@
+.home{
+    margin: 0;
+    padding:5rem;
+    background-color:firebrick;
+}
+.slider-container{
+    max-width:1240px;
+    margin: 0 auto;
+    display: flex;
+    overflow-x: hidden;    
+}
+.slider {
+    display: flex;
+    cursor: grab;  
+
+}
+
+.item {
+    display: flex;
+    width: 20rem; 
+    padding:5px;
+}
+.item img{
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-radius: 15px;
+    box-shadow: 3px 3px grey;
+   
+    
+    
+}
+
+.slider-container :hover{
+    translate: x 100px;
+    transition: all 5000; 
+}
+h1{
+    font-size:x-large;
+    color: #fff;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.contenedor-gral-card{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin:auto;
+
+
+}

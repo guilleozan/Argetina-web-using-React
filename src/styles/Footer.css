@@ -1,0 +1,22 @@
+.footer{
+  margin-top: 50px;
+}
+.cont-footer{
+   display:flex;
+   align-items: flex-start;
+   justify-content:space-around;
+}
+img{
+    width:100px;
+    object-fit:scale-down;
+    }
+
+.cont-footer div h5,li{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+.cont-footer div i{
+    padding: 5px;
+}
