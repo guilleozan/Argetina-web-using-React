@@ -54,7 +54,7 @@ const FindusPage = () => {
       </div>
       <div  style={{ height: '50vh', width: '50%' , margin: 'auto', boxShadow:'1px'}}>
       <GoogleMapReact
-        bootstrapURLKeys={{ key: "AIzaSyDLysbOFn5y3XvmF4KAfeqOv6DdVDtp_ZE " }}
+        bootstrapURLKeys={{ key: "" }}
         defaultCenter={defaultProps.center}
         defaultZoom={defaultProps.zoom}
       >
