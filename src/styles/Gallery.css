@@ -1,0 +1,18 @@
+.photo-container{
+    width: 80%;
+    margin-bottom: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.text{
+    width: 90%;
+    margin:auto;
+    margin-bottom: 3rem;
+    
+}
+.photo{
+    width:30%;
+    height:400px;
+    object-fit: cover;
+    margin:3px
+}

@@ -6,9 +6,13 @@ img {
 
 .left{
     float: left;
-    margin:10px
+    margin:10px;
 }
 .right{
     float:right;
     margin: 20px;
 }
+/* .cinema-Header{
+    background-color: #24262b;Footer & Navbar color
+
+} */

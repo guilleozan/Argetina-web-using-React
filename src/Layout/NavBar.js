@@ -1,16 +1,15 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import HomePage from "./../Components/HomePage";
-import MoviesPage from "./../Components/MoviesPage";
-import AboutusPage from "./../Components/AboutusPage";
-import RewardsPage from "./../Components/RewardsPage";
-import SpecialEventsPage from "./../Components/SpecialEventsPage";
-import FindusPage from "./../Components/FindusPage";
-import LoginPage from "./../Components/LoginPage"
+import AboutPage from "./../Components/AboutPage";
+import DestinationsPage from "../Components/DestinationsPage";
+import NewsPage from "../Components/NewsPage";
+import ContactPage from "./../Components/ContactPage";
+import GalleryPage from "./../Components/GalleryPage";
+
 
 import "./../styles/Nav.css";
-// import 'bootstrap/dist/css/bootstrap.min.css'; //Boostrap
-// import 'bootstrap-icons/font/bootstrap-icons.css';
+
 import {Offcanvas} from 'bootstrap';
 
 function NavBar() {
@@ -18,7 +17,7 @@ function NavBar() {
     <Router>
       <div className="cont-nav">
         <button
-          className=" btn btn-outline-danger btn-lg"
+          className=" btn btn-outline-dark btn-lg"
           type="button"
           data-bs-toggle="offcanvas"
           data-bs-target="#offcanvasScrolling"
@@ -48,31 +47,28 @@ function NavBar() {
           </div>
      
           <div className="offcanvas-body">
-            <ul className="offCanvUl">
-              <div className="linea"></div>
-              <div>
-              <li className="offCanvUlLi">
-                <Link to="/"><i className="bi bi-house-door"> Home   </i> </Link>{" "}
-              </li>
-              <li className="offCanvUlLi">
-                <Link to="/movies"> <i className="bi bi-film">Movies </i>   </Link>{" "}
-              </li>
-              <li className="offCanvUlLi">
-                <Link to="/rewards"><i className="bi bi-trophy">Rewards </i>   </Link>{" "}
-              </li>
-              <li className="offCanvUlLi">
-                <Link to="/findus"> <i className="bi bi-geo-alt">Find Us </i>  </Link>{" "}
-              </li>
-              <li className="offCanvUlLi">
-                <Link to="/login"> <i className="bi bi-person-add"> login </i>  </Link>{" "}
-              </li>
-              <li className="offCanvUlLi">
-                <Link to="/specialevents"> <i className="bi bi-calendar-date"> Special Events</i>   </Link>{" "}
-              </li>
-              <li className="offCanvUlLi">
-                <Link to="/aboutus"><i className="bi bi-question-circle">About Us </i>  </Link>{" "}
-              </li>
-              </div>
+        <ul className="offCanvUl">
+          <div className="linea"></div>
+          <div>
+          <li className="offCanvUlLi">
+            <Link to="/"><i className="bi bi-house-door"> Home   </i> </Link>{" "}
+          </li>
+          <li className="offCanvUlLi">
+            <Link to="/about"><i className="bi bi-question-circle"> About </i>   </Link>{" "}
+          </li>
+          <li className="offCanvUlLi">
+            <Link to="/destinations"><i className="bi bi-compass"> Destinations </i>   </Link>{" "}
+          </li>
+          <li className="offCanvUlLi">
+            <Link to="/news"><i className="bi bi-pencil-square"> News</i>  </Link>{" "}
+          </li>
+          <li className="offCanvUlLi">
+            <Link to="/gallery"><i className="bi bi-image"> Gallery </i>  </Link>{" "}
+          </li>
+          <li className="offCanvUlLi">
+            <Link to="/contact"><i className="bi bi-calendar-date"> Contact</i>   </Link>{" "}
+          </li>
+          </div>
               
               
             </ul>
@@ -83,15 +79,14 @@ function NavBar() {
 
 
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/movies" element={<MoviesPage />} />
-        <Route path="/aboutus" element={<AboutusPage />} />
-        <Route path="/rewards" element={<RewardsPage />} />
-        <Route path="/specialevents" element={<SpecialEventsPage />} />
-        <Route path="/findus" element={<FindusPage />} />
-        <Route path="/login" element={<LoginPage />} />
-      </Routes>
-    </Router>
+    <Route path="/" element={<HomePage />} />
+    <Route path="/about" element={<AboutPage />} />
+    <Route path="/destinations" element={<DestinationsPage />} />
+    <Route path="/news" element={<NewsPage />} />
+    <Route path="/contact" element={<ContactPage />} />
+    <Route path="/gallery" element={<GalleryPage />} />
+  </Routes>
+</Router>
   );
 }
 

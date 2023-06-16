@@ -1,0 +1,55 @@
+.global-padding {
+  width: 90%;
+  margin: auto;
+  background-color: rgb(232, 240, 243);
+  padding: 30px;
+}
+
+
+  .formulario-contenedor{
+   width: 70%; 
+   margin: auto
+  }
+
+  .formulario-contenedor form {
+    width: 100%;
+  }
+
+  .map-container {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+
+/* Estilos sutiles entre blanco y negro */
+body {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+input,
+textarea,
+select,
+button {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  color: #333;
+}
+
+button {
+  background-color: #fff;
+  color: #333;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #eee;
+}
+
+
+.Faqs{
+  width: 90%;
+  margin:auto;
+}

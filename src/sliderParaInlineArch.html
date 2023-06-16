@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        height: 200vh;
+        overflow: hidden;
+    }
+
+    .container {
+        position: relative;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .image-container {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .image1,
+    .image2 {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+    }
+
+    .image2 {
+        transform: translateX(100%);
+    }
+
+    .container.scrolled .image2 {
+        transform: translateX(0);
+    }
+
+    .image-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 4rem;
+        font-weight: bold;
+        color: #fff;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+    }
+
+    .container.scrolled .image-text {
+        opacity: 1;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="image-container">
+            <img class="image1" src="Images/ARG1.jpg" alt="Imagen 1">
+            <h2 class="image-text">Imagen 1</h2>
+            <img class="image2" src="Images/ARG2.jpg" alt="Imagen 2">
+            <h2 class="image-text">Imagen 2</h2>
+        </div>
+    </div>
+    <script>
+        var scrollPos = 0;
+        var container = document.querySelector('.container');
+      
+        window.addEventListener('scroll', function() {
+            var containerTop = container.getBoundingClientRect().top;
+            var windowHeight = window.innerHeight;
+
+            if (containerTop <= windowHeight / 2) {
+                container.classList.add('scrolled');
+            } else {
+                container.classList.remove('scrolled');
+            }
+
+            scrollPos = window.pageYOffset;
+        });
+
+        container.addEventListener('mousemove', function(e) {
+            var mouseX = e.clientX;
+            var containerWidth = container.offsetWidth;
+            var percentX = (mouseX / containerWidth) * 100;
+            var image2 = document.querySelector('.image2');
+            image2.style.transform = 'translateX(' + percentX + '%)';
+        });
+    </script>
+</body>
+</html>
