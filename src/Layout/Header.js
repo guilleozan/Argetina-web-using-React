@@ -9,7 +9,7 @@ const Header = () => {
     <div className="cinema-Header">
       <div className="left">
         <a href="/">
-          <img src={logo1} alt="uno mas del monton logo" />
+          <img className=' Logo' src={logo1} alt="uno mas del monton logo" />
         </a>
       </div>
 
